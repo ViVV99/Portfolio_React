@@ -1,6 +1,8 @@
-$primary-color: #ffd700;
+@use '../src/sass/variables' as variables;
 
 @import 'animate.css';
+
+
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -19,4 +21,8 @@ $primary-color: #ffd700;
 
 input, textarea {
   font-family: 'Helvetica Neue';
+}
+
+body {
+  background-color: variables.$secondaryColor;
 }

@@ -1,0 +1,99 @@
+@use '../../sass/variables' as variables;
+
+.nav-menu {
+    display: flex;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: variables.$subtitleFont;
+        min-height: 72px;
+        transition: .2s;
+        gap: 24px;
+        .menu-icon, a {
+            padding: 12px 20px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .menu-icon:hover {
+            cursor: pointer;
+        }
+
+        a {
+            border: none;
+            border-radius: 6px;
+            transition: 180ms;
+            color: white;
+        }
+
+        a.active {
+            
+            font-weight: bold;
+            background-color: variables.$contrastColor
+        }
+
+
+        a:hover {
+            background-color: variables.$contrastColor;
+        }
+    }
+
+    @media only screen and (max-width: variables.$mediumScreen){
+
+        .menu-icon {
+            display: block;
+        }
+
+        ul {
+            
+            a {
+                display: none;
+            }
+        }
+
+        ul.active {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            display: block;
+            background-color: rgba($color: #000000, $alpha: .6);
+
+            .menu-icon:hover {  
+                background-color: variables.$contrastColor;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                border-radius: 0px;
+            }
+    
+            a.active {
+                background-color: variables.$contrastColor;
+                border-radius: 0;
+            }
+        }
+
+        
+
+
+    }
+    @media only screen and (min-width: variables.$mediumScreen){
+
+        ul {
+            padding: 20px;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+
+    }   
+}

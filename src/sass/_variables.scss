@@ -1,0 +1,37 @@
+/*###################  
+  Index
+
+  1. Screen Sizes
+  2. Font Sizes
+  3. Colors
+###################*/
+
+
+/*####################
+  1. Screen Sizes
+####################*/
+
+$smallScreen:   320px;
+$mediumScreen:  480px;
+$bigScreen:     768px;
+$maxScreen:     1024px;
+
+
+/*##################
+  2. Font Sizes
+##################*/
+
+$smallFont: .75rem; /* 12px */
+$mediumFont: 1rem; /* 16px */
+$bigFont: 1.5rem; /* 24px */
+$subtitleFont: 1.75rem; /* 1.75 */
+$titleFont: 2rem; /* 32px */
+
+
+/*###############
+  3. Colors
+###############*/
+
+$primaryColor: #009b64;
+$secondaryColor: #101010;
+$contrastColor: #fb4e4e;
