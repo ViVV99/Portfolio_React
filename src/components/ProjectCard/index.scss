@@ -1,0 +1,50 @@
+@use '../../sass/variables' as variables;
+
+/* .project-card-container {
+    border: 1px solid variables.$primaryColor;
+    border-radius: 20px;
+    max-width: 450px;
+} */
+
+.project-card-container {
+  border: 1px solid variables.$primaryColor;
+  border-radius: 9px;
+  width: 20%;
+  transition: 0.1s;
+  font-family: 'Barlow';
+
+  a {
+    color: #fff;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 9px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: variables.$primaryColor;
+  }
+
+  .project-card-info {
+    padding: 6px 12px;
+
+    h3 {
+      min-height: 60px;
+      font-size: x-large;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: medium;
+      min-height: 120px;
+      margin: 10px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: variables.$mediumScreen) {
+  .project-card-container {
+  }
+}

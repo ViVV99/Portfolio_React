@@ -19,6 +19,11 @@
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow/Barlow-Regular.ttf') format('TrueType');
+}
+
 input, textarea {
   font-family: 'Helvetica Neue';
 }

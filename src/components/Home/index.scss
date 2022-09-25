@@ -1,0 +1,75 @@
+@use '../../sass/variables' as variables;
+
+#main-home {
+  padding: 5px;
+
+  .main-title-box {
+    padding: 10%;
+
+    h1 {
+      font-size: 32px;
+      color: #fff;
+      font-family: 'Barlow';
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 30px;
+      text-align: center;
+      color: #fff;
+      font-family: 'Barlow';
+    }
+  }
+
+  #projects {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & > * {
+      /* justify-self: center;
+            align-items: center; */
+    }
+  }
+
+  @media only screen and (max-width: variables.$mediumScreen) {
+    .main-title-box {
+      h1 {
+        font-size: 24px;
+        color: #fff;
+        font-family: 'Barlow';
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+        text-align: center;
+        color: #fff /* rgb(142, 185, 199) */;
+        font-family: 'Barlow';
+      }
+    }
+  }
+
+  @media only screen and (max-width: variables.$smallScreen) {
+    #projects {
+      grid-template-columns: 1fr;
+    }
+    .main-title-box {
+      h1 {
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Barlow';
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+        text-align: center;
+        color: #fff /* rgb(142, 185, 199) */;
+        font-family: 'Barlow';
+      }
+    }
+  }
+}
