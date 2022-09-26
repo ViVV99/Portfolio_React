@@ -1,0 +1,13 @@
+@use '../../sass/variables' as variables;
+
+.dropdown-box {
+  color: white;
+  background: #0b0b0b;
+  border: 1px solid variables.$contrastColor;
+  padding: 5px 9px;
+  border-radius: 15px;
+
+  h4 {
+    font-size: medium;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import DropdownBox from '../../components/DropdownBox';
 import ProjectCard from '../../components/ProjectCard';
 
 import './index.scss';
@@ -19,18 +20,27 @@ function Home() {
         </section>
 
         <section id="projects">
-          <ProjectCard title="Lorem ipsum"></ProjectCard>
+          <ProjectCard
+            title="Lorem ipsum"
+            projectDescription="Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            In ipsa natus rerum deserunt ut voluptatibus
+            quod facilis."
+          />
           <ProjectCard
             title="Lorem ipsum, dolor sit amet consectetur."
             projectDescription="Lorem ipsum dolor sit, 
             amet consectetur adipisicing elit. 
             In ipsa natus rerum deserunt ut voluptatibus
-            quod facilis ducimus qui aliquid distinctio explicabo,
-            quas dicta."
-          ></ProjectCard>
-          <ProjectCard title="Lorem ipsum, dolor sit amet consectetur."></ProjectCard>
-          <ProjectCard title="Lorem ipsum, dolor sit amet consectetur."></ProjectCard>
-          <ProjectCard title="Lorem ipsum, dolor sit amet consectetur."></ProjectCard>
+            quod facilis."
+          />
+          <ProjectCard title="Lorem ipsum, dolor sit amet consectetur." />
+          <ProjectCard title="Lorem ipsum, dolor sit amet consectetur." />
+          <ProjectCard title="Lorem ipsum, dolor sit amet consectetur." />
+        </section>
+        <section id="stack">
+          bctaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          <DropdownBox />
         </section>
       </div>
     </>
